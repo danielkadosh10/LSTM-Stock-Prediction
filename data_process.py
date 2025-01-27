@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
-
+# Purpose: Take the data and return the split up data
 def data_processing():
     data = 'data.csv'
     df = pd.read_csv(data)[7500:8500]  # Sample 1000 different days in the dataset
