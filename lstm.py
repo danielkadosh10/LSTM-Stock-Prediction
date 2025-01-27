@@ -11,9 +11,9 @@ from activation_funcs import tanh
 class LSTM:
     # Purpose: Creates an LSTM with the weights defined by the RNN.
     # Inputs:
-    #   - label: number in the chain of hidden layers
-    #   - w_forget/input/output: These are all the weights defined by the rnn
-    #   - b_forget/input/output: These are all the biases defined by the rnn
+    #   label - number in the chain of hidden layers
+    #   w_forget/input/output - These are all the weights defined by the rnn
+    #   b_forget/input/output - These are all the biases defined by the rnn
 
     def __init__(self, label, num_of_features):
         self.label = label
@@ -58,9 +58,9 @@ class LSTM:
 
     # Purpose: Performs the calculation done by the LSTM. forget_gate->input->output
     # Inputs:
-    #   - input: value for that day
-    #   - short_mem: short term memory passed down by other LSTMs
-    #   - long_mem: long term memory passed down by other LSTMs
+    #   input - value for that day
+    #   short_mem - short term memory passed down by other LSTMs
+    #   long_mem - long term memory passed down by other LSTMs
 
     def perform_calculation(self, input, short_mem, long_mem):
         self.input = input
